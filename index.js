@@ -25,6 +25,11 @@ app.use(BASE_PATH, (() => {
 		res.render("poetry/index", { poem });
 	});
 
+	router.get("/poetry/random-structure", (req, res) => {
+		const poem = poetry.generateRandomStructure();
+		res.render("poetry/index", { poem });
+	});
+
 	return router;
 })());
 

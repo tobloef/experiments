@@ -118,5 +118,6 @@ const generateHardcodedPoem = () => {
 module.exports = {
 	initialize,
 	generate: generateHardcodedPoem,
+	generateRandomStructure: generateRandomPoem,
 };
 
